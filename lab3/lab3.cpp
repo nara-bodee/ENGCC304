@@ -21,7 +21,7 @@ int main() {
     for ( int i = 0;i < n;i++ ) {
         printf( "%2d ", i ); 
     }//end for
-    printf( "\n " );
+    printf( "\n" );
     printf( "Array:  " );
     for( int i=0;i<n;i++ ) {
         if ( isPrime( arr[ i ] ) )
