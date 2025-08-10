@@ -32,8 +32,6 @@ int main() {
                 printf("Guess the winning number (%d-%d): \n", low, high);
                 if (scanf("%d", &guessnum) != 1) {
                     printf("Please enter a valid number.\n");
-                    while (getchar() != '\n');
-                    continue;
                 }
 
                 if (guessnum < answer) {
