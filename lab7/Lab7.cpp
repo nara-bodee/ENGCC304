@@ -15,7 +15,6 @@ int main() {
     while (1) {
         printf("Do you want to play game (1=play,-1=exit): \n");
         if (scanf("%d", &choice) != 1) {
-            // ถ้าผู้ใช้กรอกไม่ใช่ตัวเลข
             printf("Please enter only 1 or -1.\n");
         }
 
