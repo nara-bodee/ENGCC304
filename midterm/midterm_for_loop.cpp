@@ -1,22 +1,21 @@
 #include <stdio.h>
 
+
 int main() {
-    int N, i, j, Prime;
+    int N, i, j, prime;
     printf("Enter number : ");
     scanf("%d", &N);
 
-    // วนจาก N ลงไปถึง 2
     for (i = N; i >= 2; i--) {
-        Prime = 1; // สมมติว่าเป็นจำนวนเฉพาะ
-        // ตรวจสอบว่า i หารด้วยเลขอื่น (2 ถึง i-1) ลงตัวไหม
-        for (j = 2; j < i; j++) {
-            if (i % j == 0) {
-                Prime = 0; // ไม่ใช่จำนวนเฉพาะ
-                break;
+  
+        for (j = 2; j < i; j++) { // ลูปตรวจสอบตัวหาร
+            if (i % j == 0) { // ถ้า i หาร j ลงตัว
+                break; // ออกจากลูปทันที
             }
         }
-        if (Prime) {
-            printf("%d ", i);
+        if (j == i) { // ถ้า j วิ่งมาถึง i ได้ แสดงว่าไม่มีตัวหาร
+        printf("%d ", i);
         }
-    } return 0;
+    }
+    return 0;
 }
