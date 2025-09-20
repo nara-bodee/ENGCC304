@@ -2,46 +2,53 @@
 
 int main() {
     int N;
-    int arr[N];
-
-    printf("Enter N :\n");
+    printf("Enter N :\n");     // ขอจำนวนสมาชิกของArray
     scanf("%d", &N);
-    
-    for (int i = 0; i < N; i++) { // วนรับค่า N ครั้ง
-        printf("Enter value[%d] :\n", i); // แสดงตำแหน่งที่รับค่า
-        scanf("%d", &arr[i]); // รับค่าใส่ Array
+
+    int arr[N];                // ประกาศArrayขนาด N
+    for (int i = 0; i < N; i++) {
+        printf("Enter value[%d] :\n", i);
+        scanf("%d", &arr[i]);  // รับค่าทีละตำแหน่ง เก็บลงใน arr[i]
     }
 
-    // แสดง Index
+    // แสดงตำแหน่ง index ของArray
     printf("Index: ");
-    for (int i = 0; i < N; i++) { // วนแสดงค่า Index
-        printf("%d  ", i); // แสดงค่า Index
+    for (int i = 0; i < N; i++) {
+        printf("%d  ", i);     // พิมพ์ index ทีละตัว
     }
-    printf("\n"); 
-
-    // แสดง Array (จำนวนเฉพาะ หรือ #)
-    printf("Array: ");
-    for (int i = 0; i < N; i++) { // วนแสดงค่า Array
-        int num = arr[i]; // เก็บค่าที่ตำแหน่ง i ของ Array
-        int prime = 1;   // สมมติว่าเป็นจำนวนเฉพาะ
-
-        if (num < 2) { // ถ้าน้อยกว่า 2 ไม่ใช่จำนวนเฉพาะ
-            prime = 0; // ไม่ใช่จำนวนเฉพาะ
-        } else {
-            for (int j = 2; j * j <= num; j++) { // ตรวจสอบตัวหารจาก 2 ถึง √num
-                if (num % j == 0) { // ถ้าหารลงตัว
-                    prime = 0; // ไม่ใช่จำนวนเฉพาะ
-                    break;
-                }
-            }
-        }
-
-        if (prime) // ถ้าเป็นจำนวนเฉพาะ
-            printf("%d  ", num); // แสดงค่าจำนวนเฉพาะ
-        else
-            printf("#  "); // แสดง # แทนค่าที่ไม่ใช่จำนวนเฉพาะ
-    } 
     printf("\n");
 
-    return 0;
+    // แสดงค่าของArray พร้อมตรวจสอบว่าเป็นจำนวนเฉพาะหรือไม่
+    printf("Array: ");
+    for (int i = 0; i < N; i++) {
+        int num = arr[i];      // ดึงค่าปัจจุบันออกมา
+
+        if (num < 2) {
+            // เลขน้อยกว่า 2 (0,1,เลขลบ) ไม่ใช่จำนวนเฉพาะ
+            printf("#  ");
+        } else {
+            int j;
+            int isComposite = 0;   // flag สำหรับบอกว่าเจอตัวหารหรือยัง
+
+            // ตรวจสอบจาก j = 2 ถึง sqrt(num)
+            for (j = 2; j * j <= num; j++) {
+                if (num % j == 0) {
+                    // ถ้าหารลงตัว → ไม่ใช่จำนวนเฉพาะ
+                    isComposite = 1;
+                    break;          // ออกจากลูปทันที
+                }
+            }
+
+            if (isComposite == 0) {
+                // ถ้าไม่เจอตัวหารเลย → เป็นจำนวนเฉพาะ
+                printf("%d  ", num);
+            } else {
+                // ถ้าเจอตัวหาร → ไม่ใช่จำนวนเฉพาะ
+                printf("#  ");
+            }
+        }
+    }
+    printf("\n");
+
+    return 0;   // จบโปรแกรม
 }
