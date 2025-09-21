@@ -1,30 +1,30 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // สำหรับใช้ฟังก์ชัน math
 
-int armstrong(int n){
-    int temp = n;
-    int sum = 0;
-    int digits = 0;
+int armstrong(int n){ // ฟังก์ชันตรวจสอบว่า n เป็นเลขอาร์มสตรองหรือไม่
+    int temp = n; // ตัวแปรชั่วคราวสำหรับเก็บค่า n ที่ต้องใช้เพราะตอนนับจำนวนหลัก ต้องเอามาหาร10ไปเรื่อยๆ จะทำให้ค่าของมันหายไป ถ้าใช้้ n ตรงๆ พอหารหมด n จะเหลือ 0 แล้วใช้งานต่อไม่ได้
+    int sum = 0; // ตัวแปรเก็บผลรวม
+    int digits = 0; // ตัวแปรเก็บจำนวนหลักของ n
 
-    for(temp = n ; temp >0 ; temp/=10){
-        digits++;
+    for(temp = n ; temp >0 ; temp/=10){ // นับจำนวนหลัก
+        digits++; // เพิ่มจำนวนหลักทีละ 1
     }
 
-    for (temp = n; temp > 0; temp /= 10) {
-        int digit = temp % 10;
-        sum += pow(digit, digits);
+    for (temp = n; temp > 0; temp /= 10) { // วนลูปแยกแต่ละหลักของ n
+        int digit = temp % 10; // ดึงหลักสุดท้ายออกมา
+        sum += pow(digit, digits); // ยกกำลังจำนวนหลัก แล้วบวกเข้ากับผลรวม
     }
-    return sum == n;
+    return sum == n; // ถ้าผลรวมเท่ากับ n แสดงว่าเป็นเลขอาร์มสตรอง คืนค่า true (1) ไม่งั้นคืนค่า false (0)
 }
 
-int main() {
-    int n;
-    printf("Enter number:\n");
-    scanf("%d", &n);
-    if(armstrong(n)){
-        printf("Pass.\n");
-    } else {
-        printf("Not Pass.\n");
+int main() { // ฟังก์ชันหลัก
+    int n; // ตัวแปรเก็บเลขที่รับมา
+    printf("Enter number:\n"); // รับค่าเลข
+    scanf("%d", &n); // รับค่าเลข
+    if(armstrong(n)){ // ถ้า n เป็นเลขอาร์มสตรอง
+        printf("Pass.\n"); // แสดง Pass
+    } else { // ถ้า n ไม่เป็นเลขอาร์มสตรอง
+        printf("Not Pass.\n"); // แสดง Not Pass
     }
     return 0;
 }
