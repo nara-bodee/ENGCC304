@@ -1,40 +1,34 @@
 #include <stdio.h>
 
+// ฟังก์ชันสำหรับสลับค่าตัวเลขโดยใช้ pointer
 void swapNumbers(int *a, int *b) {
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
+    *a = *a + *b;  // รวมค่าไว้ใน *a
+    *b = *a - *b;  // คำนวณค่าใหม่ของ *b
+    *a = *a - *b;  // คำนวณค่าใหม่ของ *a
 }
 
 int main() {
-    //ประกาศตัวแปร num1 และ num2 และรับค่าจากผู้ใช้
-    int num1;
-    int num2;
+    int num1, num2;
+    int *ptr1, *ptr2;
 
-    printf("Enter num1 : \n");
-    if (scanf("%d", &num1) != 1) {
-        printf("Invalid input for num1.\n");
-        return 1;
-    }
+    // รับค่าจากผู้ใช้
+    printf("Enter num1 :\n");
+    scanf("%d", &num1);
+    printf("Enter num2 :\n");
+    scanf("%d", &num2);
 
-    printf("Enter num2 : \n");
-    if (scanf("%d", &num2) != 1) {
-        printf("Invalid input for num2.\n");
-        return 1;
-    }
-    
-    //ประกาศตัวแปร ptr1 และ ptr2 เป็น Pointer และเก็บค่าที่อยู่ของ num1 และ num2 ตามลำดับ
-    int *ptr1 = &num1;
-    int *ptr2 = &num2;
-    
-    // แสดงค่าก่อนการสลับ
-    printf("\nBefore swap (num1 & num2) : %d, %d\n", num1, num2);
-    
-    //เรียกใช้ฟังก์ชัน swapNumbers โดยส่ง Pointer ทั้ง 2 ค่าเข้าไป
+    // กำหนด pointer ให้ชี้ไปยังตัวแปร
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    // แสดงค่าก่อนสลับ
+    printf("Before swap (num1 & num2) : %d, %d\n", num1, num2);
+
+    // เรียกใช้ฟังก์ชันสลับค่า
     swapNumbers(ptr1, ptr2);
-    
-    // แสดงค่าหลังการสลับ
+
+    // แสดงค่าหลังสลับ
     printf("After swap (num1 & num2) : %d, %d\n", num1, num2);
-    
+
     return 0;
 }
