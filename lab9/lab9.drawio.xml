@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.3" pages="2">
+  <diagram name="Page-1" id="BSvWTkcizjzVA6da5r9-">
+    <mxGraphModel dx="2488" dy="1398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out1" value="แสดง: &quot;Enter N :&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="110" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="inN" value="รับค่า N (จำนวนสมาชิก)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proc1" value="กำหนดตัวแปร N และ &lt;br&gt;ประกาศอาเรย์ arr ขนาด N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="250" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="init_i1" value="กำหนด i = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_i1" value="i &lt; N ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="400" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loop_proc1" value="แสดง: &quot;Enter value[&lt;em&gt;i&lt;/em&gt;] :&quot;&lt;br&gt;รับค่าเก็บใน arr[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="490" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_i1" value="เพิ่มค่า i ขึ้น 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out_index_start" value="แสดง: &quot;Index: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="640" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="init_i2" value="กำหนด i = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="710" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_i2" value="i &lt; N ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="780" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="out_i" value="แสดงค่า i" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="870" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_i2" value="เพิ่มค่า i ขึ้น 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="940" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out_newline1" value="แสดง: ขึ้นบรรทัดใหม่" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1010" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out_array_start" value="แสดง: &quot;Array: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1080" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="init_i3" value="กำหนด i = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_i3" value="i &lt; N ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1220" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_num" value="กำหนด num = arr[i]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1310" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_prime1" value="num &lt; 2 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1380" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="out_hash1" value="แสดง: &quot;#  &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1470" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_init_check" value="กำหนด j = 2 &lt;br&gt;กำหนด isComposite = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1470" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_prime2" value="j * j &lt;= num ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_prime3" value="num % j == 0 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1660" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_composite" value="กำหนด isComposite = 1 &lt;br&gt;ออกจากลูป" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_j" value="เพิ่มค่า j ขึ้น 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1740" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cond_prime_final" value="isComposite == 0 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1810" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="out_num" value="แสดงค่า num" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1900" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out_hash2" value="แสดง: &quot;#  &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1900" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="join_prime_check" value="" style="ellipse;html=1;shape=cross;outlineConnect=0;verticalAlign=top;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1980" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_i3" value="เพิ่มค่า i ขึ้น 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="2020" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="out_newline2" value="แสดง: ขึ้นบรรทัดใหม่" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2090" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stop" value="จบ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="2160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="conn1" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="start" target="out1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="100" as="sourcePoint" />
+            <mxPoint x="475" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out1" target="inN">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="160" as="sourcePoint" />
+            <mxPoint x="475" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn3" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="inN" target="proc1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="230" as="sourcePoint" />
+            <mxPoint x="475" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="proc1" target="init_i1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="310" as="sourcePoint" />
+            <mxPoint x="475" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="init_i1" target="cond_i1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="380" as="sourcePoint" />
+            <mxPoint x="475" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn6" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i1" target="loop_proc1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="470" as="sourcePoint" />
+            <mxPoint x="475" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="loop_proc1" target="inc_i1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="550" as="sourcePoint" />
+            <mxPoint x="475" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn8" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="inc_i1" target="cond_i1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="620" as="sourcePoint" />
+            <mxPoint x="475" y="670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="590" />
+              <mxPoint x="320" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn9" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i1" target="out_index_start">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="430" as="sourcePoint" />
+            <mxPoint x="540" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="430" />
+              <mxPoint x="550" y="660" />
+              <mxPoint x="425" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_index_start" target="init_i2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="690" as="sourcePoint" />
+            <mxPoint x="475" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="init_i2" target="cond_i2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="760" as="sourcePoint" />
+            <mxPoint x="475" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn12" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i2" target="out_i">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="850" as="sourcePoint" />
+            <mxPoint x="475" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_i" target="inc_i2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="920" as="sourcePoint" />
+            <mxPoint x="475" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="inc_i2" target="cond_i2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="990" as="sourcePoint" />
+            <mxPoint x="475" y="1040" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="960" />
+              <mxPoint x="320" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn15" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i2" target="out_newline1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="810" as="sourcePoint" />
+            <mxPoint x="540" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="810" />
+              <mxPoint x="550" y="1030" />
+              <mxPoint x="425" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_newline1" target="out_array_start">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1060" as="sourcePoint" />
+            <mxPoint x="475" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_array_start" target="init_i3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1130" as="sourcePoint" />
+            <mxPoint x="475" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="init_i3" target="cond_i3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1200" as="sourcePoint" />
+            <mxPoint x="475" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn19" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i3" target="proc_num">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1290" as="sourcePoint" />
+            <mxPoint x="475" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn20" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="proc_num" target="cond_prime1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1360" as="sourcePoint" />
+            <mxPoint x="475" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn21" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime1" target="out_hash1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="1410" as="sourcePoint" />
+            <mxPoint x="430" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn22" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_hash1" target="join_prime_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="1520" as="sourcePoint" />
+            <mxPoint x="380" y="1570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="1985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn23" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime1" target="proc_init_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="1410" as="sourcePoint" />
+            <mxPoint x="540" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn24" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="proc_init_check" target="cond_prime2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1530" as="sourcePoint" />
+            <mxPoint x="590" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn25" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime2" target="cond_prime3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1630" as="sourcePoint" />
+            <mxPoint x="590" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn26" value="จริง" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime3" target="proc_composite">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="1690" as="sourcePoint" />
+            <mxPoint x="650" y="1740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" edge="1" parent="1" source="proc_composite" target="cond_prime2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1730" as="sourcePoint" />
+            <mxPoint x="740" y="1780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="1770" />
+              <mxPoint x="790" y="1770" />
+              <mxPoint x="790" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn28" value="เท็จ" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime3" target="inc_j">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="1710" as="sourcePoint" />
+            <mxPoint x="540" y="1760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="1690" />
+              <mxPoint x="425" y="1690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn29" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="inc_j" target="cond_prime2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1790" as="sourcePoint" />
+            <mxPoint x="475" y="1840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="425" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn30" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime2" target="cond_prime_final">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="1590" as="sourcePoint" />
+            <mxPoint x="650" y="1640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="1590" />
+              <mxPoint x="670" y="1760" />
+              <mxPoint x="540" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn31" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime_final" target="out_num">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1880" as="sourcePoint" />
+            <mxPoint x="590" y="1930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="out_num" target="join_prime_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1950" as="sourcePoint" />
+            <mxPoint x="590" y="2000" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="1985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn33" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_prime_final" target="out_hash2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="1840" as="sourcePoint" />
+            <mxPoint x="650" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn34" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" edge="1" parent="1" source="out_hash2" target="join_prime_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1950" as="sourcePoint" />
+            <mxPoint x="740" y="2000" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="1985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn35" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="join_prime_check" target="inc_i3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="435" y="1990" as="sourcePoint" />
+            <mxPoint x="485" y="2040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn36" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="inc_i3" target="cond_i3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="2070" as="sourcePoint" />
+            <mxPoint x="475" y="2120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="2040" />
+              <mxPoint x="300" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn37" value="เท็จ" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="cond_i3" target="out_newline2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="1250" as="sourcePoint" />
+            <mxPoint x="540" y="1300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="1250" />
+              <mxPoint x="550" y="2110" />
+              <mxPoint x="425" y="2110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn38" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="out_newline2" target="stop">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="2140" as="sourcePoint" />
+            <mxPoint x="475" y="2190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w3v04yb31MujY0g1qlg_" name="Page-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
