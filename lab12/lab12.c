@@ -11,7 +11,7 @@ struct Student {
 } typedef S;
 
 // ฟังก์ชันตัดเกรด
-char* getGrade(float score) {
+const char* getGrade(float score) {
     if (score >= 80) return "A";
     else if (score >= 75) return "B+";
     else if (score >= 70) return "B";
