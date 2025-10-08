@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char employeeID[11]; 
+    char employeeID[10]; 
     int workingHours;
     float salaryPerHour;
     float totalSalary;
@@ -17,7 +17,7 @@ int main() {
 
     totalSalary = workingHours * salaryPerHour;
 
-    printf("----");
+    printf("----\n");
     printf("Expected Output:\n");
     printf("Employees ID = %s\n", employeeID);
     printf("Salary = U$ %.2f\n", totalSalary);
