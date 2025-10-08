@@ -17,6 +17,8 @@ int main() {
 
     totalSalary = workingHours * salaryPerHour;
 
+    printf("----");
+    printf("Expected Output:\n");
     printf("Employees ID = %s\n", employeeID);
     printf("Salary = U$ %.2f\n", totalSalary);
 
