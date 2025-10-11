@@ -2,10 +2,10 @@
 
 int main() {
     int N;
-    printf("Enter value: ");
+    printf("Enter value:\n");
     scanf("%d", &N);
 
-    printf("Series: ");
+    printf("Series:\n");
     if (N % 2 == 1) {
 
         for (int i = 1; i <= N; i += 2) {
